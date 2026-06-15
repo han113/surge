@@ -1,0 +1,5 @@
+#!name=ZeroTrust Direct
+#!desc=18.0.0.0/16 走 DIRECT，避免和零信任冲突
+
+[Rule]
+IP-CIDR,18.0.0.0/16,DIRECT,no-resolve
