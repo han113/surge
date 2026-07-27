@@ -1,5 +1,10 @@
-#!name=ZeroTrust Direct
-#!desc=18.0.0.0/16 走 DIRECT，避免和零信任冲突
+#!name=ZeroTrust Bypass
+#!desc=18.0.0.0/16 完全绕过 Surge，交给 ZeroTrust
+#!system=mac
+
+[General]
+skip-proxy = %APPEND% 18.0.0.0/16
+tun-excluded-routes = %APPEND% 18.0.0.0/16
 
 [Rule]
-IP-CIDR,18.0.0.0/16,DIRECT,no-resolve
+IP-CIDR,18.0.0.0/16,DIRECT
