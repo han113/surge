@@ -1,5 +1,5 @@
-#!name=ZeroTrust Bypass
-#!desc=18.0.0.0/16 完全绕过 Surge，交给 ZeroTrust
+#!name=ZeroTrust 18网段放行
+#!desc=让 18.0.0.0/16 完全绕过 Surge，交由 ZeroTrust/VPN 路由处理
 #!system=mac
 
 [General]
@@ -7,4 +7,4 @@ skip-proxy = %APPEND% 18.0.0.0/16
 tun-excluded-routes = %APPEND% 18.0.0.0/16
 
 [Rule]
-IP-CIDR,18.0.0.0/16,DIRECT
+IP-CIDR,18.0.0.0/16,DIRECT,no-resolve
