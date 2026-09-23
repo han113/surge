@@ -1,0 +1,9 @@
+#!name=黑与白公益站直连
+#!desc=黑与白公益站强制本地直连，Linux.do 登录继续按 Surge 原有代理规则处理
+#!system=mac
+
+[General]
+skip-proxy = %APPEND% hybgzs.com, *.hybgzs.com
+
+[Rule]
+DOMAIN-SUFFIX,hybgzs.com,DIRECT
